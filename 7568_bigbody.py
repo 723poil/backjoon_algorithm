@@ -1,24 +1,15 @@
 N = int(input())
 
 info = []
-rank = []
-
-for i in range(N):
-    rank.append(int(0))
 
 for i in range(N):
     a, b = map(int, input().split())
-    info.append([a, b])
+    info.append([a, b, int(1)])
 
-for i in range(N-1):
-    for j in range(i+1, N):
-        if x[i] > x[j]:
-            if y[i] > y[j]:
-                rank[i] += 1
-                rank[j] += rank[i]+1
-            else:
-                if rank[i] == 0:
-                    rank[i] += 1
-                    rank[j] += 1
-                else:
-                    rank[i] 
+for i in range(N):
+    for j in range(N):
+        if info[i][0] < info[j][0] and info[i][1] < info[j][1]:
+            info[i][2] += 1
+
+for i in range(N):
+    print(info[i][2], end = ' ')
