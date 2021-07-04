@@ -13,5 +13,3 @@ while True:
     if count == N:
         print(temp)
         break
-
-
