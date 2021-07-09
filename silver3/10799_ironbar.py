@@ -1,6 +1,5 @@
 # 이중for문을 쓸 경우 시간초과 발생
 
-from collections import deque
 
 lazer = str(input())
 
