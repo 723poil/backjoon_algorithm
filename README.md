@@ -19,3 +19,6 @@
  + 예외 사항
    + 시험기간 제외
    + 다른 특이사항 제외
+
+## 프로필 주소
+ + https://solved.ac/profile/leetkdguq73
