@@ -44,9 +44,10 @@ class absh:
         parent = 1
         child = 2
 
-        while child < self.count and self.count > 1:
-            if abs(absq[child]) > abs(absq[child+1]) or (abs(absq[child] == abs(absq[child+1]) and absq[child+1] < 0 and absq[child] > 0)):
-                child += 1
+        while child <= self.count and self.count > 1:
+            if child < self.count :
+                if abs(absq[child]) > abs(absq[child+1]) or (abs(absq[child] == abs(absq[child+1]) and absq[child+1] < 0 and absq[child] > 0)):
+                    child += 1
             if abs(temp) < abs(absq[child]) or (abs(temp) == abs(absq[child]) and temp < 0): return data
             
             absq[parent] = absq[child]
