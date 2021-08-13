@@ -12,8 +12,6 @@ def find(number, a, s, e):
             return find(number, a, e, e)
         return find(number, a, mid, e)
 
-
-
 N = int(input())
 
 number = list(map(int, input().split()))
