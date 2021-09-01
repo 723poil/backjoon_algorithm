@@ -1,3 +1,5 @@
+# dfs 사용
+
 class Node:
     def __init__ (self, x, y):
         self.x = x
