@@ -1,11 +1,12 @@
 import sys
+from collections import deque
 
 input = sys.stdin.readline
 
 M,N = map(int, input().split())
 
 tomato = []
-goodtomato = []
+goodtomato = deque()
 totalcount = 0
 
 for i in range(N):
@@ -23,7 +24,7 @@ def BFS():
     global goodtomato, tomato, totalcount
     lastcount = 0
     while goodtomato:
-        y, x, count = goodtomato.pop(0)
+        y, x, count = goodtomato.popleft()
         totalcount += 1
         lastcount = count
         for i in range(4):
