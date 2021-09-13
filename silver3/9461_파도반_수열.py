@@ -18,4 +18,3 @@ for _ in range(T):
             if len(s) == n:
                 print(s[n-1])
                 break
-
