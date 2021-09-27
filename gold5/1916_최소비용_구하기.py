@@ -26,6 +26,9 @@ def dijkstra(startv, endv):
     while queue:
         dis, ver = heapq.heappop(queue)
 
+        if distance[ver] < dis:
+            continue
+
         for verx, disx in adj[ver]:
             new_dis = dis + disx
 
