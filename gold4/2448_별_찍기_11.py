@@ -40,7 +40,7 @@ count = 1
 for i in range(N):
     print(' '*space, end='')
     print(''.join(stars[i][:count]), end='')
-    print()
+    print(' '*space)
 
     space -= 1
     count += 2
